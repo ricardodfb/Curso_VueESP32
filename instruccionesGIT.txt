@@ -1,0 +1,4 @@
+Para subir el proyecto a un repositorio no es necesario subir los archivos que inician con punto (.pio, .vscode)
+Estos se crean automaticamente al ejecutar el codigo por primera vez en una computadora.
+
+Para esto hay que declarar estos archivos en el documento .gitignore
