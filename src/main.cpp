@@ -36,7 +36,9 @@ void setup() {
   if(!settingRead()){
     settingSave();
   }
-  
+  // Configuracion de los LEDs
+  settingPines();
+
 }
 
 void loop() {

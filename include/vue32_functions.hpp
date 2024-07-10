@@ -1,5 +1,7 @@
 // ARCHIVO DE FUNCIONES, AQUí SE DECLARAN FUNCIONES
 
+#include "vue32_LedBlink.hpp"
+
 // Imprimir en consola de manera mas sencilla
 void log(String s){
     Serial.println(s);
@@ -36,3 +38,12 @@ String idUnique(){
     snprintf(idunique, 15, "%04X", chip);
     return idunique;
 }
+
+// Configurar los pines de los LEDs
+void settingPines(){
+    pinMode(WIFILED, OUTPUT);
+    pinMode(MQTTLED, OUTPUT);
+    setOffSingle(WIFILED);
+    setOffSingle(MQTTLED);
+}
+
